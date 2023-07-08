@@ -3,6 +3,7 @@ import com.sun.source.tree.IfTree;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     // Римские числа
@@ -11,8 +12,10 @@ public class Main {
     private final static int[] DECIMAL_VALUES = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
 
     public static void main(String[] args) throws WrongNumbers, DifferentNumberSystems, CorrespondingString, NegationNumbers {
-        System.out.println(calc("III-II"));
-
+        // System.out.println(calc("2-3"));
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        System.out.println(calc(input));
     }
 
     public static String calc(String input) throws WrongNumbers, DifferentNumberSystems, CorrespondingString, NegationNumbers {
