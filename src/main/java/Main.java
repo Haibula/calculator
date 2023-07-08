@@ -14,8 +14,11 @@ public class Main {
     public static void main(String[] args) throws WrongNumbers, DifferentNumberSystems, CorrespondingString, NegationNumbers {
         // System.out.println(calc("2-3"));
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        System.out.println(calc(input));
+        while (scanner.hasNext()) {
+            String input = scanner.nextLine();
+            System.out.println(calc(input));
+        }
+
     }
 
     public static String calc(String input) throws WrongNumbers, DifferentNumberSystems, CorrespondingString, NegationNumbers {
